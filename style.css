@@ -1,0 +1,119 @@
+body {
+	font-family: 'Chivo Mono', monospace;
+	background:#f0cdff;
+}
+
+.tituloprincipal {
+	font-size: 20px;
+	width: 75%;
+	margin: 0;
+}
+
+.tituloprincipal:first-letter{
+	font-size: 60px;
+}
+
+.centrada {
+	text-align: center;
+	display: inline-block;
+	width: 75%;
+	height: 75vh;
+	margin: 1vh 1vw;
+}
+
+#caixaentrada {
+	box-sizing: border-box;
+	resize: none;
+	border-radius: 10px;
+	padding: 10px 15px;
+	width: 100%;
+	height: 100%;
+	font-size: 5vh;
+	line-height: 55px;
+	border: none;
+	background: transparent;
+
+}
+
+.csaida{
+	position: relative;
+	top: -50px;
+	text-align: center;
+	display: inline-block;
+	width: 20%;
+	height: 85vh;
+	vertical-align: top;
+	margin: 1vh 1vw;
+}
+
+#caixasaida{
+	box-sizing: border-box;
+	resize: none;
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	padding: 5px 10px;
+	font-size: 2vh;
+	line-height: 20px;
+	border: none;
+	box-shadow: 6px 6px 20px black;
+
+}
+
+button{
+	text-transform: uppercase;
+	border-radius: 25vh;
+	font-family: 'Chivo Mono', monospace;
+	font-size: 2vh;
+	transition: 500ms all;
+	background: black;
+	color: white;
+	border: none;
+}
+
+.copiar {
+	position: relative;
+	bottom: 10vh;
+	height: 6%;
+	width: 50%;
+}
+
+.botoes {
+	height: 10vh;
+
+}
+
+.botao1 {
+	position: relative;
+	top: 20px;
+	width: 35%;
+	height: 50%;
+	
+}
+
+button:hover {
+	background: rgba(255, 255, 255, 0.3);
+	font-size: 25px;
+	cursor: pointer;
+	color: black;
+}
+
+.copiar:hover {
+	background: #f0cdff;
+}
+
+@media screen and (max-width: 1000px) {
+	.centrada{
+		width: 100vw;
+		margin: 0 1vw;
+	}
+
+	.csaida{
+		display: block;
+		width: 100vw;
+		height: 50vh;
+		position: relative;
+		top: 10vh;
+		margin: 0 1vw;
+	}
+}

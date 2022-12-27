@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>DE-CODER</title>
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+
+		<script>
+			//document.querySelector('#caixasaida').value=texto;
+
+			function codificar(){
+				var texto = document.querySelector('#caixaentrada').value;
+
+				for (var i=0; i <=texto.length; i++) {
+					if (texto[i]=='a') {texto[i]='b';}
+				}
+
+				document.querySelector('#caixasaida').value=texto;
+
+			};
+
+
+			function decodificar(){
+				var texto = document.querySelector('#caixaentrada').value;
+				document.querySelector('#caixasaida').value=texto;
+			};
+
+
+			function copy(){
+				var texto = document.querySelector('#caixasaida');
+				texto.select();
+				document.execCommand('copy');
+			};
+
+		</script>
+
+	</head>
+	<body>
+		<main>
+
+			<label for='caixaentrada'><h1 class="tituloprincipal">P de_coder</h1></label>
+
+			<div class="centrada">
+				<textarea id="caixaentrada" placeholder="digite o texto/código aqui" autofocus></textarea>
+				
+				<div class="botoes">
+					<button class="botao1" onclick="codificar()">Codificar</button>
+					<button class="botao1" onclick='decodificar()'>Decodificar</button>
+				</div>
+			</div>
+
+			<div class="csaida">
+				<textarea id="caixasaida" readonly placeholder="o texto codificado (ou decodificado) irá aparecer aqui"></textarea>
+
+				<button class="copiar" onclick='copy()'>Copiar</button>
+			</div>
+
+		</main>
+	</body>
+
+</html>
