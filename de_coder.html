@@ -7,40 +7,7 @@
 		<link rel="stylesheet" type="text/css" href="reset.css">
 		<link rel="stylesheet" type="text/css" href="style.css">
 		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
-
-		<script>
-
-			function codificar(){
-				var texto = document.querySelector('#caixaentrada').value
-				texto=texto.replaceAll('e', 'enter');
-				texto=texto.replaceAll('i', 'imes');
-				texto=texto.replaceAll('a',  'ai');
-				texto=texto.replaceAll('u', 'ufat');
-				texto=texto.replaceAll('o', 'ober');
-				document.querySelector('#caixasaida').value=texto;
-
-			};
-
-
-			function decodificar(){
-				var texto = document.querySelector('#caixaentrada').value;
-				texto=texto.replaceAll('enter', 'e');
-				texto=texto.replaceAll('imes', 'i');
-				texto=texto.replaceAll('ai', 'a');
-				texto=texto.replaceAll('ufat', 'u');
-				texto=texto.replaceAll('ober', 'o');
-				document.querySelector('#caixasaida').value=texto;
-			};
-
-
-			function copy(){
-				var texto = document.querySelector('#caixasaida');
-				texto.select();
-				document.execCommand('copy');
-				document.querySelector('#caixaentrada').value='';
-			};
-
-		</script>
+		<script src="script.js"></script>
 
 	</head>
 	<body>
