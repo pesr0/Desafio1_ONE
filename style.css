@@ -116,4 +116,13 @@ button:hover {
 		top: 10vh;
 		margin: 0 1vw;
 	}
+
+	.copiar{
+		height: 6vh;
+		width: 30vw;
+	}
+
+	button:hover{
+		font-size: 4vw;
+	}
 }
