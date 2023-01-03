@@ -6,7 +6,7 @@ function codificar(){
         if(texto[i]==texto[i].toUpperCase()) x++;
     }
 
-    if (x!=0) alert('Apenas letras minúsculas')
+    if (x!=0) alert('Apenas letras minúsculas');
 
     else{
         texto=texto.replaceAll('e', 'enter');
