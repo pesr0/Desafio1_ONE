@@ -3,7 +3,7 @@ function codificar(){
     var x=0;
     
     for(var i=0; i<texto.length; i++){
-        if(texto[i]==texto[i].toUpperCase()) x++;
+        if(texto[i]==texto[i].toUpperCase() && texto[i]!=' ') x++;
     }
 
     if (x!=0) alert('Apenas letras minúsculas');
