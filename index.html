@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en-us">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width">
@@ -13,23 +13,23 @@
 	<body>
 		<main>
 
-			<label for='caixaentrada'><h1 class="tituloprincipal">P de_coder</h1></label>
+			<label for='input_box'><h1 class="main_title">P de_coder</h1></label>
 
-			<div class="centrada">
-				<textarea id="caixaentrada" placeholder="digite o texto/código aqui" autofocus></textarea>
+			<div class="input_div">
+				<textarea id="input_box" placeholder="text the sentence/code here" autofocus></textarea>
 
-				<p>&#9888 Atenção: Apenas letras minúsculas e sem acentos</p>
+				<p>&#9888 atention: just letters without accent and lowercase letters</p>
 				
-				<div class="botoes">
-					<button class="botao1" onclick="codificar()">Codificar</button>
-					<button class="botao1" onclick='decodificar()'>Decodificar</button>
+				<div class="buttons">
+					<button class="button_1" onclick="codificar()">Code</button>
+					<button class="button_1" onclick='decodificar()'>Decode</button>
 				</div>
 			</div>
 
-			<div class="csaida">
-				<textarea id="caixasaida" readonly placeholder="o texto codificado (ou decodificado) irá aparecer aqui"></textarea>
+			<div class="output_div">
+				<textarea id="output_box" readonly placeholder="codificated text (or descodificated) will appear here"></textarea>
 
-				<button class="copiar" onclick='copy()'>Copiar</button>
+				<button class="copy" onclick='copy()'>Copy</button>
 			</div>
 
 		</main>

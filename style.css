@@ -3,17 +3,17 @@ body {
 	background:#f0cdff;
 }
 
-.tituloprincipal {
+.main_title {
 	font-size: 20px;
 	width: 75%;
 	margin: 0;
 }
 
-.tituloprincipal:first-letter{
+.main_title:first-letter{
 	font-size: 60px;
 }
 
-.centrada {
+.input_div {
 	text-align: center;
 	display: inline-block;
 	width: 75%;
@@ -21,7 +21,7 @@ body {
 	margin: 1vh 1vw;
 }
 
-#caixaentrada {
+#input_box {
 	box-sizing: border-box;
 	resize: none;
 	border-radius: 10px;
@@ -35,7 +35,7 @@ body {
 
 }
 
-.csaida{
+.output_div{
 	position: relative;
 	top: -50px;
 	text-align: center;
@@ -46,7 +46,7 @@ body {
 	margin: 1vh 1vw;
 }
 
-#caixasaida{
+#output_box{
 	box-sizing: border-box;
 	resize: none;
 	width: 100%;
@@ -71,19 +71,19 @@ button{
 	border: none;
 }
 
-.copiar {
+.copy {
 	position: relative;
 	bottom: 10vh;
 	height: 6%;
 	width: 50%;
 }
 
-.botoes {
+.buttons {
 	height: 10vh;
 
 }
 
-.botao1 {
+.button_1 {
 	position: relative;
 	top: 20px;
 	width: 35%;
@@ -98,17 +98,17 @@ button:hover {
 	color: black;
 }
 
-.copiar:hover {
+.copy:hover {
 	background: #f0cdff;
 }
 
 @media screen and (max-width: 1000px) {
-	.centrada{
+	.input_div{
 		width: 100vw;
 		margin: 0 1vw;
 	}
 
-	.csaida{
+	.output_div{
 		display: block;
 		width: 95vw;
 		height: 50vh;
@@ -121,7 +121,7 @@ button:hover {
 		font-size: 10px;
 	}
 
-	.copiar{
+	.copy{
 		height: 6vh;
 		width: 30vw;
 	}
