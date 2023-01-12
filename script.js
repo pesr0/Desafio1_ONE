@@ -10,7 +10,7 @@ function codificar(){
         if( (texto[i]==texto[i].toUpperCase() || hasAccent(texto)) && texto[i]!=' ' && texto[i]!='\n' && isNaN(texto[i]) ) x++;
     }
 
-    if (x!=0) alert('Apenas letras minúsculas');
+    if (x!=0) alert('only lowercase letters and letters without accent');
 
     else{
         texto=texto.replaceAll('e', 'enter');
@@ -34,7 +34,6 @@ function decodificar(){
     texto=texto.replaceAll('ober', 'o');
     document.querySelector('#output_box').value=texto;
 };
-
 
 function copy(){
     var texto = document.querySelector('#output_box');
